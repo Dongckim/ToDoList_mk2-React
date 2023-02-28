@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+}
+.Global-style {
+    display: grid;
+    align-items: center;
+    max-width: 1200px;
+    width: 800px;
+    text-align: center;
+    background-color: rgb(233, 220, 38);
+    height: 600px;
+    margin-top: 90px;
+    border-radius: 30px;
+}
+.div-head{
+    background-color: blue;
+    padding : 1rem;
+    border: 2px solid #ccc;
+    font-size: 1.4rem;
+}
+.div-main {
+    background-color: red;
+    padding : 1rem;
+    border: 2px solid #ccc;
+    font-size: 1.4rem;
+}
+.div-foot {
+    background-color: white;
+    padding : 1rem;
+    border: 2px solid #ccc;
+    font-size: 1.4rem;
+}
