@@ -1,35 +1,137 @@
+@font-face {
+    font-family: 'KorailRoundGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
 body {
-    display: grid;
-    background-color: coral;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background: #3b5998;
+    background: linear-gradient(to right, #ffffff, #3b5998);
+    background-repeat: no-repeat;
+    height: 100%;
 }
-.Global-style {
-    display: grid;
-    align-items: center;
-    max-width: 1200px;
+.app-template {
+    display: flex;
+    flex-direction: column;
     width: 800px;
-    text-align: center;
-    background-color: rgb(233, 220, 38);
-    height: 600px;
-    margin-top: 90px;
-    border-radius: 30px;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(250, 250, 250, 0.8);
 }
-.div-head{
-    background-color: blue;
-    padding : 1rem;
-    border: 2px solid #ccc;
-    font-size: 1.4rem;
+.todo__input {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 3px solid #3b5998;
 }
-.div-main {
-    background-color: red;
-    padding : 1rem;
-    border: 2px solid #ccc;
-    font-size: 1.4rem;
+.input {
+    width: 100%;
+    min-height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    background: white;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    color: #3a7bd5;
+    border-radius: 0 0 5px 5px;
 }
-.div-foot {
-    background-color: white;
-    padding : 1rem;
-    border: 2px solid #ccc;
-    font-size: 1.4rem;
+
+.button-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+    background: #3b5998;
+    color: #ffffff;
+    cursor: pointer;     
+}
+.button-1:hover {
+    background: #5679c4;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+    background: #3b5998;
+    color: #ffffff;
+    cursor: pointer;     
+}
+.button:hover {
+    background: #ffffff;
+    color: #3b5998;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.button-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #3b5998;
+    cursor: pointer;     
+}
+.button-2:hover{
+    background: #3b5998;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.todo__list__item {
+    font-family: 'KorailRoundGothicBold';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    color: #3b5998;
+    font-family: Helvetica;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.border-bottom {
+    border-bottom: 3px solid #3b5998;
+    display: flex;
+    justify-items: center;
+}
+.todo__list__completed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: #3b5998;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-weight: 400;
+    border-radius: 3px;
 }

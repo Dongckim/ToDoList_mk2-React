@@ -1,7 +1,11 @@
+import { FaTrash, FaCheck } from "react-icons/fa";
+
 const Main = () => {
     return(
-        <div className="div-main">
-                안녕하세요
+        <div className="todo__list__item">
+            안녕하세요
+            <button className="button-2"><FaCheck/></button>
+            <button className="button-2"><FaTrash/></button>
         </div>
     )
 }
