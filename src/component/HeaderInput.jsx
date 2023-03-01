@@ -1,25 +1,17 @@
-import { FaPlus } from "react-icons/fa";
-import { clickAddButtonHandler } from "../function";
+import InsertButton from "./InsertButton";
+import InputContents from "./InputContents";
+import { useContext } from "react";
+import { TodoContext } from "../App";
 
-const HeaderInput = ({dataObj, funcObj}) => {
-    console.log(dataObj, funcObj)
-    // const [ setTodo, setContent ] = funcObj; 
-    // console.log({dataObj, funcObj})
+const HeaderInput = () => {
+    const { todo, setTodo, content,setContent } = useContext(TodoContext);
     return(
-        <form className="todo__input">
-            <input 
-                className="input"
-                type="text"
-                placeholder="Add a task here..."
-                // // onChange={(event) =>{
-                // //         setContent(event.target.value)
-                // //     } 
-                // }
-            />
-            <button type="submit" className="button-1" onChange={(event) => {clickAddButtonHandler(event, dataObj, funcObj)}}>
-                <FaPlus/>
-            </button>
-        </form>
+        <>
+            <div className="todo__input" >
+                <InputContents/>
+                <InsertButton/>
+            </div>
+        </>
     )
 }
 

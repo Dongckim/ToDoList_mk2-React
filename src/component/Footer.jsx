@@ -1,11 +1,15 @@
-import { FaTrash, FaCheck } from "react-icons/fa";
+import DoneBackButton from "./DoneBackButton";
+import DeleteButton from "./DeleteButton";
 
-const Footer = () => {
+const Footer = ({item}) => {
     return(
-        <div className="todo__list__completed">
-            안녕하세요
-            <button className="button"><FaCheck/></button>
-            <button className="button"><FaTrash/></button>
+        <div key={item.id} className="todo__list__completed">
+            {item.content}
+            <div className="button-position">
+              <DoneBackButton color = {'#ffffff'} backgroundColor = {'#3b5998'} item = {item}/>
+              <DeleteButton color = {'#ffffff'} backgroundColor = {'#3b5998'} item ={item}/>  
+            </div>
+            
         </div>
     )
 }

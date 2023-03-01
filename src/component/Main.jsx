@@ -1,11 +1,14 @@
-import { FaTrash, FaCheck } from "react-icons/fa";
+import CheckButton from "./CheckButton";
+import DeleteButton from "./DeleteButton";
 
-const Main = () => {
+const Main = ({item}) => {
     return(
-        <div className="todo__list__item">
-            안녕하세요
-            <button className="button-2"><FaCheck/></button>
-            <button className="button-2"><FaTrash/></button>
+        <div key={item.id} className="todo__list__item">
+            {item.content}
+            <div className="button-position">
+                <CheckButton color={'#3b5998'} backgroundColor = {'#ffffff'} item = {item}/>
+                <DeleteButton color={'#3b5998'} backgroundColor = {'#ffffff'} item = {item}/>
+            </div>
         </div>
     )
 }
