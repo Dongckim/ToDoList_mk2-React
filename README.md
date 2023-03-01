@@ -16,8 +16,8 @@ Themed by Facebook, right before named of Meta.
 >These are children component from a root component, `App.jsx`.
 <br/>
 
-- `InputContents`
-- `InsertButton`
+- `InputContents.jsx`
+- `InsertButton.jsx`
 >These two files are related to insertion part of to-do list.
 <br/>
 
