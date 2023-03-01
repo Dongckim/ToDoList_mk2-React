@@ -3,7 +3,7 @@ import { TodoContext } from "../App";
 import { useContext } from "react";
 
 const DoneBackButton = ({ color, backgroundColor, item}) => {
-    const { todo, setTodo, content,setContent } = useContext(TodoContext);
+    const { todo, setTodo, title, setTitle, content, setContent}= useContext(TodoContext);
     const clickWorkingStatusChanger = (id) => {
         let newTodo = todo.map((item) => {
             if (item.id == id) {

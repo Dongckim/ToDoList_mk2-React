@@ -3,11 +3,12 @@ import { TodoContext } from "../App";
 import { useContext } from "react";
 
 const InsertButton = () => {
-    const { todo, setTodo, content,setContent} = useContext(TodoContext);
+    const { todo, setTodo, title, setTitle, content, setContent} = useContext(TodoContext);
     const clickAddButtonHandler = (e) => {
         e.preventDefault();
         const newTodo = {
             id: Math.random(),
+            title,
             content,
             isDone: false
         };

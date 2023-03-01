@@ -111,6 +111,10 @@ body {
     display: flex;
     justify-items: center;
 }
+.list-position{
+    display : flex;
+    gap : 20px;
+}
 .todo__list__completed {
     display: flex;
     justify-content: space-between;

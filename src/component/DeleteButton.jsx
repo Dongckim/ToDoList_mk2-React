@@ -3,7 +3,7 @@ import { TodoContext } from "../App";
 import { useContext } from "react";
 
 const DeleteButton = ({ color, backgroundColor, item}) => {
-    const { todo, setTodo, content,setContent } = useContext(TodoContext);
+    const { todo, setTodo, title, setTitle, content, setContent} = useContext(TodoContext);
     const clickRemoveButtonHandler = (id) => {
         const newTodo = todo.filter((todo) => todo.id !== id)
         setTodo(newTodo)
